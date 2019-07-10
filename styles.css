@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
+
+body {
+    background-color: lightblue;
+    text-transform: lowercase;
+    font-family: 'Josefin Sans', sans-serif;
+}
+/* This is the navigation bar. */
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(64, 91, 201);
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    
+}
+
+li {
+    padding: 10px;
+    transition: 3s;
+}
+
+/* div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+} */
+
+li:hover {
+    background-color: black;
+}
+
+nav a {
+     color: white;
+     text-decoration: none;
+}
+
+/* This is the main area styles. */
+
+div {
+    display: flex;
+    justify-content: space-between;
+    height: 100vh;
+    border: black 3px solid;
+}
+
+aside {
+    background-color: lightpink;
+    order: 1;
+    width: 300px;
+}
+
+main {
+    background-color: lightcyan;
+    order: 2;
+    flex-grow: 2;
+}
+
+aside:last-child {
+    order: 3;
+}
